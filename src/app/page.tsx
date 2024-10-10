@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Edu_VIC_WA_NT_Beginner, Qwitcher_Grypen } from 'next/font/google'
 
+//eslint-disable-next-line @typescript-eslint/no-unused-vars
 const eduFont = Edu_VIC_WA_NT_Beginner({ subsets: ['latin'] })
 const qwitch = Qwitcher_Grypen({ weight: ["400", "700"], subsets: ['latin'] })
 
