@@ -9,15 +9,16 @@ console.log(eduFont, qwitch)
 
 export default function Home() {
   return (
-    <main className='bg-gradient-to-b from-[#fff5fa] via-[#F7ACD4] to-[#fff5fa] flex flex-col items-center pb-24 font-[eduFont] scroll-smooth'>
+    <main className='bg-gradient-to-b from-[#fff5fa] via-[#F7ACD4] to-[#fff5fa] flex flex-col items-center pb-24 font-[eduFont] scroll-smooth text-black'>
       {/* Top Section */}
-      <div className='flex flex-col items-center min-h-screen justify-center gap-14'>
+      <div className='flex flex-col items-center min-h-screen justify-center gap-14 w-full'>
         <div className="w-[400px] h-[400px] bg-zinc-300 rounded-full shadow-lg overflow-hidden border-2 border-pink-300">
           <Image src='/one.jpg' alt='Really REALLY cute bubs' width='1000' height='1000' />
         </div>
-        <p className="font-bold text-6xl">
-          Happy Birthday, Shabah! 🎈
-        </p>
+        <div className="font-bold text-6xl text-center flex flex-col md:flex-row gap-4 md:gap-0">
+          <p>Happy Birthday, Shabah!</p> 
+          <p>🎈</p>
+        </div>
       </div>
 
       {/* Blank Space */}
@@ -28,8 +29,8 @@ export default function Home() {
 
       {/* Card Section */}
       <div className='flex flex-col gap-24 italic font-[qwitch]'>
-        <div className='flex flex-row gap-24 items-center justify-center'>
-          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+        <div className='flex flex-col md:flex-row gap-24 items-center justify-center'>
+          <div className="md:w-[30%] max-w-[70%] flex flex-col gap-6 text-3xl">
             <p className="font-bold">
               Dear Shabah,
             </p>
@@ -39,7 +40,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+            <div className='w-[300px] h-[200px] md:w-[600px] md:h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
               <div className='-translate-y-[20%]'>
                 <Image src='/20240214_183228.jpg' alt='Cute cutie at cute cafe' width='3000' height='3600' />
               </div>
@@ -47,44 +48,47 @@ export default function Home() {
             <p className='text-xl bg-black/5 px-4'>Big smiles! <span className="not-italic">😁</span></p>
           </div>
         </div>
-        <div className='flex flex-row gap-24 items-center justify-center '>
-          <div className='flex flex-col items-center'>
-            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
-              <div className='w-[800px] -translate-x-[15%]'>
+
+        <div className='flex flex-col md:flex-row gap-24 items-center justify-center '>
+          <div className='md:order-1 order-2 flex flex-col items-center'>
+            <div className='w-[300px] h-[200px] md:w-[600px] md:h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+              <div className='w-[400px] md:w-[800px] -translate-x-[15%]'>
                 <Image src='/20240616_120248.jpg' alt='Really REALLY cute bubs' width='2000' height='2000' />
               </div>
             </div>
             <p className='text-xl bg-black/5 px-4'>Bubby secrets were whispered here <span className="not-italic">😲</span></p>
           </div>
-          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+          <div className="order-1 md:w-[30%] max-w-[70%] flex flex-col gap-6 text-3xl">
             <p>
               You have worked so hard and achieved so much (Masters, PhD, tutoring, moving out, wow!). You will always be my inspiration. It’s been so amazing to spend this time with you. I feel so lucky!
             </p>
           </div>
         </div>
-        <div className='flex flex-row gap-24 items-center justify-center'>
-          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+
+        <div className='flex flex-col md:flex-row gap-24 items-center justify-center'>
+          <div className="md:w-[30%] max-w-[70%] flex flex-col gap-6 text-3xl">
             <p>
               You have fostered and demonstrated your strengths constantly, being a role-model for everyone in your life. Your contagious smile and beautiful personality make you the highlight of any room you’re in.
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+            <div className='w-[300px] h-[200px] md:w-[600px] md:h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
               <Image src='/20240810_125754.jpg' alt='Really REALLY cute bubs' width='1560' height='4000' className='-translate-y-[17%]' />
             </div>
-            <p className='text-xl bg-black/5 px-4'>With that smile, not even the camera could focus on the alpaca <span className="not-italic">🦙</span></p>
+            <p className='text-sm md:text-xl bg-black/5 px-4'>With that smile, not even the camera could focus on the alpaca <span className="not-italic">🦙</span></p>
           </div>
         </div>
-        <div className='flex flex-row gap-24 items-center justify-center'>
-          <div className="flex flex-col items-center">
-            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
-              <div className='w-[650px]'>
+
+        <div className='flex flex-col md:flex-row gap-24 items-center justify-center'>
+          <div className="md:order-1 order-2 flex flex-col items-center">
+            <div className='w-[300px] h-[200px] md:w-[600px] md:h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+              <div className='w-[325px] md:w-[650px]'>
                 <Image src='/20240505_193644.jpg' alt='Really REALLY cute bubs' width='2736' height='2736' className='-translate-y-[19%] -translate-x-[7%]' />
               </div>
             </div>
             <p className='text-xl bg-black/5 px-4'>My forhead is gone, but you are so cute <span className="not-italic">😍</span></p>
           </div>
-          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+          <div className="order-1 md:w-[30%] max-w-[70%] flex flex-col gap-6 text-3xl">
             <p>
               I hope you have a wonderful birthday and get spoilt like you should! I can’t wait for many, many more years spent together.
             </p>
@@ -101,7 +105,7 @@ export default function Home() {
       </div>
 
       {/* Wonderful List For Bub */}
-      <div className='flex flex-row justify-center items-center pb-14 gap-10'>
+      <div className='flex md:flex-row flex-col md:max-w-full max-w-[70%] justify-center items-center md:pb-14 gap-10'>
         <div className='flex flex-col items-center justify-center gap-10 '>
           <h1 className="font-bold text-4xl">
             Wonderful List Of Why Bubby Is So Amazing:
