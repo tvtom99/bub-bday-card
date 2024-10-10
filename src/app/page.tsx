@@ -1,101 +1,130 @@
 import Image from "next/image";
+import { Edu_VIC_WA_NT_Beginner, Qwitcher_Grypen } from 'next/font/google'
+
+const eduFont = Edu_VIC_WA_NT_Beginner({ subsets: ['latin'] })
+const qwitch = Qwitcher_Grypen({ weight: ["400", "700"], subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className='bg-gradient-to-b from-[#fff5fa] via-[#F7ACD4] to-[#fff5fa] flex flex-col items-center pb-24 font-[eduFont] scroll-smooth'>
+      {/* Top Section */}
+      <div className='flex flex-col items-center min-h-screen justify-center gap-14'>
+        <div className="w-[400px] h-[400px] bg-zinc-300 rounded-full shadow-lg overflow-hidden border-2 border-pink-300">
+          <Image src='/one.jpg' alt='Really REALLY cute bubs' width='1000' height='1000' />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <p className="font-bold text-6xl">
+          Happy Birthday, Shabah! 🎈
+        </p>
+      </div>
+
+      {/* Blank Space */}
+      <div className="w-full min-h-[250px] flex justify-center items-center">
+        <div className='mx-28 w-full h-[8px] bg-white' />
+      </div>
+
+
+      {/* Card Section */}
+      <div className='flex flex-col gap-24 italic font-[qwitch]'>
+        <div className='flex flex-row gap-24 items-center justify-center'>
+          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+            <p className="font-bold">
+              Dear Shabah,
+            </p>
+            <p>
+              Happy Birthday! I can’t believe this is another year done already.
+              Every year, I have the privilege of seeing you grow. And this year - more than ever - you have truly shown yourself just how much you are capable of!
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+              <div className='-translate-y-[20%]'>
+                <Image src='/20240214_183228.jpg' alt='Cute cutie at cute cafe' width='3000' height='3600' />
+              </div>
+            </div>
+            <p className='text-xl bg-black/5 px-4'>Big smiles! <span className="not-italic">😁</span></p>
+          </div>
+        </div>
+        <div className='flex flex-row gap-24 items-center justify-center '>
+          <div className='flex flex-col items-center'>
+            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+              <div className='w-[800px] -translate-x-[15%]'>
+                <Image src='/20240616_120248.jpg' alt='Really REALLY cute bubs' width='2000' height='2000' />
+              </div>
+            </div>
+            <p className='text-xl bg-black/5 px-4'>Bubby secrets were whispered here <span className="not-italic">😲</span></p>
+          </div>
+          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+            <p>
+              You have worked so hard and achieved so much (Masters, PhD, tutoring, moving out, wow!). You will always be my inspiration. It’s been so amazing to spend this time with you. I feel so lucky!
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-row gap-24 items-center justify-center'>
+          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+            <p>
+              You have fostered and demonstrated your strengths constantly, being a role-model for everyone in your life. Your contagious smile and beautiful personality make you the highlight of any room you’re in.
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+              <Image src='/20240810_125754.jpg' alt='Really REALLY cute bubs' width='1560' height='4000' className='-translate-y-[17%]' />
+            </div>
+            <p className='text-xl bg-black/5 px-4'>With that smile, not even the camera could focus on the alpaca <span className="not-italic">🦙</span></p>
+          </div>
+        </div>
+        <div className='flex flex-row gap-24 items-center justify-center'>
+          <div className="flex flex-col items-center">
+            <div className='w-[600px] h-[400px] bg-zinc-300 rounded-lg overflow-hidden border-2 border-pink-300 shadow-xl'>
+              <div className='w-[650px]'>
+                <Image src='/20240505_193644.jpg' alt='Really REALLY cute bubs' width='2736' height='2736' className='-translate-y-[19%] -translate-x-[7%]' />
+              </div>
+            </div>
+            <p className='text-xl bg-black/5 px-4'>My forhead is gone, but you are so cute <span className="not-italic">😍</span></p>
+          </div>
+          <div className="w-[30%] flex flex-col gap-6 text-3xl">
+            <p>
+              I hope you have a wonderful birthday and get spoilt like you should! I can’t wait for many, many more years spent together.
+            </p>
+            <p className="font-bold">
+              Love Tom xx
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Blank Space */}
+      <div className="w-full min-h-[250px] flex justify-center items-center">
+        <div className='mx-28 w-full h-[8px] bg-white' />
+      </div>
+
+      {/* Wonderful List For Bub */}
+      <div className='flex flex-row justify-center items-center pb-14 gap-10'>
+        <div className='flex flex-col items-center justify-center gap-10 '>
+          <h1 className="font-bold text-4xl">
+            Wonderful List Of Why Bubby Is So Amazing:
+          </h1>
+          <ul className="text-3xl font-thin list-disc italic font-[qwitch]">
+            <li>She is friendly, kind and thoughtful.</li>
+            <li>She is the smartest person I know.</li>
+            <li>She always thinks of others before herself (to a fault!).</li>
+            <li>She loves helping people whenever she can.</li>
+            <li>Her smile is the most beautiful thing in the world.</li>
+            <li>She has the best sense of fashion.</li>
+            <li>Her cooking skills are second to none!</li>
+            <li>The way she giggles when making cheeky jokes melts my heart.</li>
+            <li>She is so funny, I get a sore stomach from laughing so much with her.</li>
+            <li>She is the most hard-working, disciplined person I know. </li>
+            <li>This list will get too long if I keep going... But ask me any time for more xx</li>
+          </ul>
+        </div>
+        <div className='flex flex-col items-center'>
+          <div className='h-[400px] w-[300px] rounded-lg bg-zinc-300 overflow-hidden border-2 border-pink-200 shadow-xl'>
+            <Image src='/20240605_182716.jpg' alt='Very cute cutie eaten cute tacos' width='1560' height='4000' className="-translate-y-[30%]" />
+          </div>
+          <p className='text-xl bg-black/5 px-4 italic font-[qwitch]'>Taco Tuesday <span className="not-italic">🌮</span></p>
+        </div>
+      </div>
+
+    </main>
   );
 }
